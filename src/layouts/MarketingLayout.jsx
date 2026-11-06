@@ -1,0 +1,18 @@
+/**
+ * layouts/MarketingLayout.jsx
+ * =============================
+ * Wraps the public Home page with the marketing Navbar/Footer.
+ */
+
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
+export default function MarketingLayout({ children }) {
+  return (
+    <div className="flex min-h-screen flex-col">
+      <Navbar />
+      <main className="flex-1">{children}</main>
+      <Footer />
+    </div>
+  );
+}
